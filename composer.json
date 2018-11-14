@@ -16,11 +16,16 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "topthink/framework": "^5.0"
+        "php": ">=7.1.0",
+        "topthink/framework": "5.2.*-dev"
     },
-    "extra": {
-        "think-path": "thinkphp"
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        },
+        "psr-0":{
+            "": "extend/"
+        }        
     },
     "config": {
         "preferred-install": "dist"
